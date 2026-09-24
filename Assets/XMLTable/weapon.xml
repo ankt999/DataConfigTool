@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfWeapon xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <weapon>
+    <id>1</id>
+    <name>铁剑</name>
+    <atk>10.5</atk>
+    <isBind>true</isBind>
+  </weapon>
+  <weapon>
+    <id>2</id>
+    <name>木弓</name>
+    <atk>8</atk>
+    <isBind>false</isBind>
+  </weapon>
+</ArrayOfWeapon>
