@@ -1,0 +1,2 @@
+前往Releases下载unitypackage
+导入包后，在Editor文件夹中查看相关文件
