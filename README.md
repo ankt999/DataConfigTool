@@ -1,7 +1,7 @@
 前往Releases下载unitypackage
 导入包后，在Editor文件夹中查看相关文件
 
-# Excel2CsBytesTools - Unity 导表工具
+#  Unity 导表工具
 
 ## 
 
@@ -36,7 +36,6 @@ Assets/
 1. **读取 Excel (`ReadExcel`)**：利用 `Excel.dll` 解析 `ExcelTable/` 目录下的 `.xlsx` 文件，并将数据缓存到内存（`DataTable`）中。
 2. **生成 C# 类 (`Excel2Cs`)**：根据表格的前三行（注释、变量名、类型），动态拼接并生成对应的 C# 数据结构代码，存入 `Scripts/Table/` 目录。
 3. **转换为 XML (`Cs2XML`)**：利用 C# 的反射机制，将内存中的表格数据实例化为刚生成的 C# 对象，并序列化保存为 `XMLTable/` 目录下的 `.xml` 临时文件。
-   *✨ 特性：智能判断 C# 脚本是否发生实质性变更，无变更则免编译直接生成，有变更则自动等待 Unity 编译完成后再生成。*
 4. **转换为 Bytes (`XML2Bytes`)**：读取上一步的 XML 文件，通过 `BinaryFormatter` 反序列化后，再以二进制流的形式写入 `BytesTable/` 目录，供游戏运行时高效读取。
 
 ---
@@ -53,14 +52,14 @@ Assets/
 
 ### 2. 导出 C# 脚本与 XML 数据
 在 Unity 顶部菜单栏中，点击：
-👉 `Excel2CsBytesTools` -> `WriteCs`
+ `Excel2CsBytesTools` -> `WriteCs`
 - 控制台会打印生成日志。
 - `Assets/Scripts/Table/` 下会自动生成对应的 `.cs` 文件。
 - `Assets/XMLTable/` 下会自动生成对应的临时 `.xml` 文件。
 
 ### 3. 导出二进制 Bytes 数据
 在 Unity 顶部菜单栏中，点击：
-👉 `Excel2CsBytesTools` -> `XML2Bytes`
+ `Excel2CsBytesTools` -> `XML2Bytes`
 - 控制台会打印转换成功的日志。
 - `Assets/BytesTable/` 下会自动生成最终的 `.bytes` 二进制文件。
 
